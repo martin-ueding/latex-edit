@@ -1,0 +1,14 @@
+#!/bin/bash
+# Copyright (c) 2012 Martin Ueding <dev@martin-ueding.de>
+
+set -e
+set -u
+
+basename="$(basename "$1")"
+dirname="$(dirname "$1")"
+
+cd "$dirname"
+
+gvim --remote-silent "$basename" &
+
+latexmk -pvc -pdf "$basename"
