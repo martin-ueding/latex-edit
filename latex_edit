@@ -9,6 +9,6 @@ dirname="$(dirname "$1")"
 
 cd "$dirname"
 
-gvim --remote-silent "$basename" &
+gvim "$basename" &
 
 latexmk -pvc -pdf "$basename"
