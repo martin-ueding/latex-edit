@@ -11,4 +11,4 @@ cd "$dirname"
 
 gvim "$basename" &
 
-latexmk -pvc -pdf "$basename"
+nice latexmk -pvc -pdf "$basename"
