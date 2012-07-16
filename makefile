@@ -14,7 +14,7 @@
 # this program. If not, see http://www.gnu.org/licenses/.
 
 all:
-	@echo There is nothing to do, you can do “make install”.
+	@echo "There is nothing to do, you can do “make install”."
 
 install:
 	install -d "$(DESTDIR)/usr/bin/"
