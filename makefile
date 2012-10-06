@@ -19,3 +19,6 @@ all:
 install:
 	install -d "$(DESTDIR)/usr/bin/"
 	install latex-edit -t "$(DESTDIR)/usr/bin/"
+
+clean:
+	@echo "Nothing to do."
