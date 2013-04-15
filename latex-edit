@@ -32,4 +32,4 @@ fi
 
 gvim "$basename" &
 
-nice latexmk -pvc -pdf "$basename"
+nice latexmk -r "/etc/latex-edit/latexmkrc" -pvc -pdf "$basename"
