@@ -4,6 +4,11 @@
 CHANGELOG
 #########
 
+v1.1
+    - Install a ``latexmkrc`` that is used for ``latex-edit``.
+    - Choose editor automatically from ``gvim``, ``kate`` and ``gedit``.
+    - Open PDF file with ``xdg-open``.
+
 v1.0.3
     - Fix bug that prevents opening a file in the current directory.
 
