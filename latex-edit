@@ -30,6 +30,13 @@ then
 	cd "$dirname"
 fi
 
-gvim "$basename" &
+for editor in gvim kate gedit
+do
+	if which "$editor" &> /dev/null
+	then
+		"$editor" "$basename" &
+		break
+	fi
+done
 
 nice latexmk -r "/etc/latex-edit/latexmkrc" -pvc -pdf "$basename"
