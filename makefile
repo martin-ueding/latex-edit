@@ -1,4 +1,4 @@
-# Copyright © 2012 Martin Ueding <dev@martin-ueding.de>
+# Copyright © 2012-2013 Martin Ueding <dev@martin-ueding.de>
 
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -19,6 +19,8 @@ all:
 install:
 	install -d "$(DESTDIR)/usr/bin/"
 	install latex-edit -t "$(DESTDIR)/usr/bin/"
+	install -d "$(DESTDIR)/etc/latex-edit"
+	install latexmkrc -t "$(DESTDIR)/etc/latex-edit"
 
 clean:
 	@echo "Nothing to do."
