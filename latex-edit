@@ -14,6 +14,7 @@ then
 	cd "$dirname"
 fi
 
+# XXX Try to find a working editor in a better way.
 for editor in gvim kate gedit
 do
 	if which "$editor" &> /dev/null
