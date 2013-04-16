@@ -1,4 +1,4 @@
-.. Copyright © 2012 Martin Ueding <dev@martin-ueding.de>
+.. Copyright © 2012-2013 Martin Ueding <dev@martin-ueding.de>
 
 ##########
 latex-edit
@@ -11,3 +11,18 @@ reloaded after rendering.
 
 This gives you a kind of IDE for LaTeX, while you can still use Vim as your
 editor.
+
+See http://martin-ueding.de/projects/latex-edit/.
+
+Installation
+============
+
+::
+
+    make
+    sudo make install
+
+Dependencies
+============
+
+- ``latexmk``
