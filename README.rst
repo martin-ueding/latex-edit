@@ -1,18 +1,23 @@
-.. Copyright © 2012-2013 Martin Ueding <dev@martin-ueding.de>
+.. Copyright © 2012-2013, 2017 Martin Ueding <dev@martin-ueding.de>
 
 ##########
 latex-edit
 ##########
 
-Open LaTeX documents with this program in a new terminal window. It will start
-gVim with the ``.tex`` file and let ``latexmk`` run ``pdflatex`` every time you
-save the document in the editor. The PDF will be displayed and should be
-reloaded after rendering.
+I like to use Vim for all source code, including LaTeX. For maximum comfort, I
+wrote this little script that opens gVim, a terminal with ``latexmk`` and a PDF
+viewer (Okular in this case) all at once.
 
-This gives you a kind of IDE for LaTeX, while you can still use Vim as your
-editor.
+``latexmk`` watches the ``.tex`` file and runs ``pdflatex`` every time the file
+is saved in the editor. It also runs ``pdflatex`` often enough to get all the
+references sorted out.
 
-See http://martin-ueding.de/projects/latex-edit/.
+Dolphin (the KDE file manager) is set up to open any ``.tex`` with
+``latex-edit`` in a terminal.
+
+The result is this:
+
+.. figure:: latex-edit.png
 
 Installation
 ============
